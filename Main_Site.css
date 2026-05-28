@@ -5,8 +5,21 @@ html{
     width: 100%;
 }
 
-p{
+h1, h2{
+    text-align: center;
+    width: 100%;
+}
+
+h1, h2, h3, p{
     margin: 0px;
+}
+
+h1{
+    font-size: 500%;
+}
+
+p{
+    font-size: 120%;
 }
 
 body { 
@@ -20,7 +33,15 @@ body {
     overflow: hidden;
     display: flex;
     font-family: 'DM Sans';
-    letter-spacing: 5px;
+    letter-spacing: 30%;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#gap_list{
+    gap:20px;
 }
 
 .background {
@@ -32,30 +53,64 @@ body {
     left: -1px;
 }
 
-.button {
+.half_div{
+    height: 50%;
+}
+
+br{
+    line-height: 10;
+}
+
+div{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.button, .button:hover, .button:active, .button:link, .button:visited{
     height: fit-content;
     display: inline-block;
     color: white;
     text-decoration: none;
-    border: 2px white solid;
-    font-size: 30px;
+    border: 2px white solid !important;
     padding:20px;
+    width: 400px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#margin_bottom{
+    margin-bottom: 70px;
+}
+
+#right_button{
+    justify-content: flex-end !important;
 }
 
 #main_title{
     width: 35%;
     margin-right:0px;
     height: 100%;
-    align-content:flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+#main_title .button_div{
+    height: 50%;
 }
 
 .button_div{
     display: flex;
-    height: 50%;
+    height: 25%;
     width: 100%;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 
