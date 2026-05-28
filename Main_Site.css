@@ -25,26 +25,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color:black;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    display: flex;
     font-family: 'DM Sans';
     letter-spacing: 30%;
     color: white;
-    flex-wrap: wrap;
-    align-items: center;
     text-transform: uppercase;
-    justify-content:center;
 
     padding-left: 2vw;
     padding-right: 2vw;
     box-sizing: border-box;
 }
 
-#gap_list{
-    gap:20px;
+.gap{
+    gap: 30px;
     text-align: center;
 }
 
@@ -61,12 +57,29 @@ body {
     left: -1px;
 }
 
-.half_div{
-    height: 50%;
+/*100%  height */
+.div_left, .div_right{
+    height: 100%;
 }
 
-br{
-    line-height: 10;
+.div_right .button{
+    padding: 0 !important;
+}
+
+.flexbox{
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.div_left{
+    width: 65%;
+}
+
+.div_right{
+    width: 35%;
 }
 
 div{
@@ -77,6 +90,10 @@ div{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.div_content{
+    height:70%;
 }
 
 .button, .button:hover, .button:active, .button:link, .button:visited{
@@ -105,8 +122,6 @@ div{
 }
 
 #main_title{
-    width: 35%;
-    margin-right:0px;
     height: 100%;
     align-items: flex-end;
     flex-direction: row;
