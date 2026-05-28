@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=DM Sans');
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    margin: 0px;
+}
+
 body { 
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-y: show;
-  overflow-x: show;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:black;
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    font-family: 'DM Sans';
+    letter-spacing: 5px;
 }
 
 .background {
@@ -15,11 +33,31 @@ body {
 }
 
 .button {
-    position: fixed;
-    z-index: 99;
-    border: 0;
-    display: none;
+    height: fit-content;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px white solid;
+    font-size: 30px;
+    padding:20px;
 }
+
+#main_title{
+    width: 35%;
+    margin-right:0px;
+    height: 100%;
+    align-content:flex-end;
+}
+
+.button_div{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
 
 #start_button {
     position: fixed;
